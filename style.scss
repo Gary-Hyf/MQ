@@ -1,0 +1,46 @@
+@import "./media_query.scss";
+.test{
+    width:auto;
+    @include MQ(XS){
+        color:red;
+    }
+    @include MQ(S){
+        color:orange;
+    }
+    @include MQ(M){
+        color:yellow;
+    }
+    @include MQ(ML){
+        color:green;
+    }
+    @include MQ(L){
+        color:blue;
+    }
+    @include MQ(maxL){
+        color:purple;
+    }
+
+}
+.t{
+    background-color: red;
+    width:auto;
+    @include MQ(XS){
+        float:right;
+    }
+    @include MQ(S){
+        float: left;
+    }
+    @include MQ(M){
+        float:right;
+    }
+    @include MQ(ML){
+        float: left;
+    }
+    @include MQ(L){
+        float:right;
+    }
+    @include MQ(maxL){
+        float: left;
+    }
+
+}
